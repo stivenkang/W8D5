@@ -1,7 +1,7 @@
 function curriedSum(numArgs) {
     const numbers = [];
 
-    function _curriedSum(num) {
+    return function _curriedSum(num) {
         numbers.push(num)
 
         if (numbers.length === numArgs) {
